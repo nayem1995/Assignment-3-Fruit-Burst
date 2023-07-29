@@ -11,30 +11,45 @@
 </head>
 
 <body>
-    <header class="px-24">
-        <nav class="rounded-full bg-[#F85559]">
-            <div class="navbar text-white mt-4">
-                <div class="flex-1 list-none gap-8">
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Shop</li>
-                    <li>All Fruits</li>
+    <header class="px-24 mt-2">
+        <div class="navbar  bg-[#F85559] rounded-full">
+            <div class="navbar-start hidden lg:flex">
+                <ul class="menu menu-horizontal px-1  text-white">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="navbar-center">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0 text-black"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li>
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
                 </div>
-                <div class="flex-1">
-                    <div>
-                        <img src="images/logo.png" alt="">
-                    </div>
-                    <h2 class="text-2xl	">Fruit Burst</h2>
-                </div>
-                <div class="flex-none gap-2">
-                    <div>
-                        <input class="p-1 rounded-full" type="text" placeholder="Search here" />
-                    </div>
-                    <div>
-                        <img class="" src="images/Frame.svg" alt="">
-                    </div>
-                </div>
-        </nav>
+               <div>
+               
+                <a class="btn btn-ghost normal-case text-xl  text-white"> <img class="h-12" src="images/logo.png" alt=""> Fruit Burst</a>
+               </div>
+            </div>
+            <div class="navbar-end">
+                <div class="join"><input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                    <button class="btn join-item rounded-r-full"><img class="" src="images/Frame.svg" alt=""></button>
+                  </div>
+            </div>
+        </div>
 
         <section class="mt-10">
             <div class="carousel w-full">
@@ -88,33 +103,33 @@
                 </div>
         </section>
 
-        <div class="relative">
-            <div class="relative z-10 flex justify-center text-center border gap-4 rounded-lg mx-48">
-                <div>
-                    <img src="images/fruit1.png" alt="">
-                    <p>Grapes</p>
-                </div>
-                <div>
-                    <img src="images/fruit2.png" alt="">
-                    <p>Orange</p>
-                </div>
-                <div>
-                    <img src="images/fruit3.png" alt="">
-                    <p>Mango</p>
-                </div>
-                <div>
-                    <img src="images/fruit4.png" alt="">
-                    <p>Strawbery</p>
-                </div>
-                <div>
-                    <img src="images/fruit5.png" alt="">
-                    <p>Pomegranate</p>
-                </div>
-            </div>
-        </div>
     </header>
+<div class="px-24">
+    <div class="grid grid-cols-2 md:grid-cols-5 justify-center text-center border gap-12 rounded-lg">
+        <div>
+            <img src="images/fruit1.png" alt="">
+            <p>Grapes</p>
+        </div>
+        <div>
+            <img src="images/fruit2.png" alt="">
+            <p>Orange</p>
+        </div>
+        <div>
+            <img src="images/fruit3.png" alt="">
+            <p>Mango</p>
+        </div>
+        <div>
+            <img src="images/fruit4.png" alt="">
+            <p>Strawbery</p>
+        </div>
+        <div>
+            <img src="images/fruit5.png" alt="">
+            <p>Pomegranate</p>
+        </div>
+    </div>
+</div>
     <section class="px-24 mt-20">
-        <div class="flex justify-between">
+        <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-8">
             <div>
                 <h1 class="text-5xl font-bold">Deal of the day</h1>
                 <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
@@ -202,18 +217,18 @@
     </section>
     <!-- team section -->
     <section class="px-24">
-        <div>
+        
             <div
                 style="background-image: url(images/team.png); margin: 120px 70px 0px 70px; padding-top: 2px; padding-bottom: 50px; color: wheat;">
                 <div>
-                    <div class="flex justify-center mt-32 font-bold text-5xl">
+                    <div class="flex justify-center mt-32 font-bold text-5xl md:font-normal">
                         <h1>Meet the team section</h1>
                     </div>
                     <p class="flex justify-center mt-5">Contrary to popular belief, is not simply random text. It has
                         roots
                         in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
-                <div class="flex justify-center gap-20 mt-20 text-center">
+                <div class="justify-center gap-20 mt-20 text-center grid grid-cols-1 md:grid-cols-4">
                     <div>
                         <img src="images/member1.png" alt="">
                         <h4 class="gap-2 font-bold">Awlad Hossain</h4>
@@ -256,11 +271,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
     </section>
     <main>
         <div>
-            <div class="flex justify-center mt-20 font-bold text-5xl">
+            <div class="grid justify-center mt-20 font-bold text-5xl">
                 <h1>Why Choose Us</h1>
             </div>
             <div class="flex justify-center mt-4">
